@@ -1,0 +1,37 @@
+
+---
+
+## 📄 **.gitignore** (optimized for Python)
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest / Coverage
+htmlcov/
+.coverage
+*.cover
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build
+dist/
+build/
