@@ -20,7 +20,7 @@ class APIClient:
 
         try:
             response = self.session.request(method, url, **kwargs)
-            response.raise_for_status()  # Raise exception for bad status codes
+            #response.raise_for_status()  # Raise exception for bad status codes
             return response
         except requests.exceptions.RequestException as e:
             print(f"Request failed: {e}")

@@ -23,6 +23,16 @@ def test_post_data():
     return TEST_POST_DATA
 
 @pytest.fixture(scope="function")
+def test_comment_data():
+    """Return test comment data"""
+    return {
+        'postId': 1,
+        'name': 'Test Commenter',
+        'email': 'test@example.com',
+        'body': 'This is a test comment body'
+    }
+
+@pytest.fixture(scope="function")
 def cleanup_resources():
     """Fixture to clean up resources after tests"""
     # This fixture can be used to clean up created resources
