@@ -33,6 +33,14 @@ def test_comment_data():
     }
 
 @pytest.fixture(scope="function")
+def test_album_data():
+    """Return test album data"""
+    return {
+        'userId': 1,
+        'title': 'Test Album Title'
+    }
+
+@pytest.fixture(scope="function")
 def cleanup_resources():
     """Fixture to clean up resources after tests"""
     # This fixture can be used to clean up created resources
